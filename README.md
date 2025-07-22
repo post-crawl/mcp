@@ -38,25 +38,16 @@ bun dev
 
 ### Testing with MCP Inspector
 
-1. Start the development server:
-```bash
-bun dev
-```
+The simplest way to test this MCP server is using MCP Inspector. 
 
-2. In another terminal, open MCP Inspector:
-```bash
-npx @modelcontextprotocol/inspector
-```
+**📖 See [how-to-use.md](./how-to-use.md) for detailed step-by-step instructions with screenshots.**
 
-3. Configure MCP Inspector:
-- Select **"Streamable HTTP"** as the connection type
-- Enter server URL: `localhost:8787/mcp`
-- Add authentication header:
-  - Header Name: `Authorization`
-  - Value: `Bearer YOUR_POSTCRAWL_API_KEY`
-- **Important**: Extend request timeouts in inspector settings
-
-4. Connect and test the available tools
+Quick overview:
+1. Install MCP Inspector: `npx @modelcontextprotocol/inspector`
+2. Use **"Streamable HTTP"** transport type
+3. Connect to: `https://postcrawl.com/mcp`
+4. Add Authorization header with your PostCrawl API key
+5. Test the available tools
 
 ## Authentication
 
